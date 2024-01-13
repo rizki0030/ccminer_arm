@@ -6,12 +6,12 @@ Git and Build Process:
 ```bash
 sudo apt-get install software-properties-common
 sudo wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
-sudo add-apt-repository 'deb http://apt.llvm.org/focal/ llvm-toolchain-focal main'
+sudo add-apt-repository 'deb http://apt.llvm.org/focal/ llvm-toolchain-focal-11 main'
 sudo apt-get update
 sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential -y
-sudo apt-get install -y libllvm-16-ocaml-dev libllvm16 llvm-16 llvm-16-dev llvm-16-doc llvm-16-examples llvm-16-runtime clang-16 clang-tools-16 clang-16-doc libclang-common-16-dev libclang-16-dev libclang1-16 clang-format-16 python3-clang-16 clangd-16 clang-tidy-16 libclang-rt-16-dev libpolly-16-dev libfuzzer-16-dev lldb-16 lld-16 libc++-16-dev libc++abi-16-dev libomp-16-dev libclc-16-dev libunwind-16-dev libmlir-16-dev mlir-16-tools flang-16 libclang-rt-16-dev-wasm32 libclang-rt-16-dev-wasm64 libclang-rt-16-dev-wasm32 libclang-rt-16-dev-wasm64
-sudo ln -sf /usr/lib/llvm-16/bin/clang-16 /usr/bin/clang
-sudo ln -sf /usr/lib/llvm-16/bin/clang++ /usr/bin/clang++
+sudo apt-get install -y libllvm-11-ocaml-dev libllvm11 llvm-11 llvm-16-dev llvm-11-doc llvm-11-examples llvm-11-runtime clang-11 clang-tools-11 clang-11-doc libclang-common-11-dev libclang-11-dev libclang1-11 clang-format-11 python3-clang-11 clangd-11 clang-tidy-11 libclang-rt-11-dev libpolly-11-dev libfuzzer-11-dev lldb-11 lld-11 libc++-11-dev libc++abi-11-dev libomp-11-dev libclc-11-dev libunwind-11-dev libmlir-11-dev mlir-11-tools flang-11 libclang-rt-11-dev-wasm32 libclang-rt-11-dev-wasm64 libclang-rt-11-dev-wasm32 libclang-rt-11-dev-wasm64
+sudo ln -sf /usr/lib/llvm-11/bin/clang-11 /usr/bin/clang
+sudo ln -sf /usr/lib/llvm-11/bin/clang++ /usr/bin/clang++
 
 git clone https://github.com/rizki0030/ccminer_arm.git
 cd ccminer_arm
